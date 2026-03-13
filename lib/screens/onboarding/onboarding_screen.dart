@@ -33,8 +33,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         curve: Curves.easeInOut,
       );
     } else {
-      // Navigate to home or next screen
-      Navigator.of(context).pushReplacementNamed('/home');
+      // Navigate to sign in screen after onboarding
+      Navigator.of(context).pushReplacementNamed('/sign-in');
     }
   }
 
@@ -90,7 +90,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: ElevatedButton(
                 onPressed: _nextPage,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 35, 181, 200),
+                  backgroundColor: const Color(0xFF29DBE2),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
